@@ -68,4 +68,5 @@ csv_file_path = './datasets/KDD/KDDTrain+_20Percent.txt'
 json_file_path = './datasets/train_data.json'
 
 # %%
+# Generate JSON file
 generate_json_pipeline(csv_file_path, json_file_path)

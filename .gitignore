@@ -1,0 +1,45 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyc
+*.pyo
+venv/
+.env
+.env.*
+*.sqlite3
+instance/
+.pytest_cache/
+.coverage
+*.log
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# Secrets and API keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env.*
+config.js
+config.json
+
+# Miscellaneous
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
