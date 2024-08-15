@@ -1,0 +1,21 @@
+{
+  "name": "thesis-prt840",
+  "version": "1.0.0",
+  "description": "**Thesis PRT 840**",
+  "main": "index.js",
+  "bin": {
+    "thesis-prt840": "./index.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.4",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "yargs": "^17.7.2"
+  }
+}
