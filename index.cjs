@@ -3,13 +3,13 @@
 const path = require('path');
 const fs = require('fs');
 const axios = require('axios');
-const {yargs} = require('yargs/yargs');
+const yargs = require('yargs/yargs');
 const {hideBin} = require('yargs/helpers');
 
 // Parse command line arguments.
 const argv = yargs(hideBin(process.argv))
     .version('1.0.0')
-    .description('tool to generate snort rules using GenAI')
+    .describe('tool to generate snort rules using GenAI')
     .option('prompt', {
         alias: 'p',
         describe: 'prompt for user input',
@@ -25,7 +25,7 @@ if (!argv.prompt) {
 // load training data
 const loadTrainingData = async () => {
     try {
-        const data = fs.readFileSync(path.resolve(__dirname, 'datasets','train_data.json'), 'utf8');
+        const data = await fs.readFileSync(path.resolve(__dirname, 'datasets','train_data.json'), 'utf8');
         return JSON.parse(data);
     } catch (error) {
         console.error('Error loading training data:', error.message);
@@ -59,6 +59,6 @@ const generateSnortRule = async (prompt) => {
     }
 }
 
-const trainingData = await loadTrainingData();
+const trainingData = loadTrainingData();
 
 generateSnortRule(argv.prompt, trainingData)
