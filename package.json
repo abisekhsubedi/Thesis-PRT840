@@ -16,6 +16,8 @@
     "axios": "^1.7.4",
     "commander": "^12.1.0",
     "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4",
+    "openai": "^4.57.0",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
