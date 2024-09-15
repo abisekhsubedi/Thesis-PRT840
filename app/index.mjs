@@ -64,6 +64,7 @@
 // generateSnortRule(argv.prompt, trainingData)
 
 import OpenAI from "openai";
+// what's wrong with API keys
 const openai = new OpenAI({
     apiKey: ''
 });
