@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "**Thesis PRT 840**",
   "main": "index.js",
-  "bin": {
-    "thesis-prt840": "./index.mjs"
-  },
+  "bin": {},
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,13 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.4",
-    "commander": "^12.1.0",
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.4",
     "openai": "^4.57.0",
     "yargs": "^17.7.2"
-  },
-  "devDependencies": {
-    "json-to-jsonl": "^1.1.0"
   }
 }

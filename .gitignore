@@ -43,3 +43,6 @@ config.json
 .vscode/
 *.sublime-project
 *.sublime-workspace
+
+
+example.json
