@@ -1,47 +1,60 @@
-#!/usr/bin/env node
-
-// const path = require('path');
-// const fs = require('fs');
-// const axios = require('axios');
-// const yargs = require('yargs/yargs');
-// const {hideBin} = require('yargs/helpers');
-
-// // Parse command line arguments.
-// const argv = yargs(hideBin(process.argv))
-//     .version('1.0.0')
-//     .describe('tool to generate snort rules using GenAI')
-//     .option('prompt', {
-//         alias: 'p',
-//         describe: 'prompt for user input',
-//         type: 'string',
-//         demandOption: true
-//     }).argv;
-
-// if (!argv.prompt) {
-//     console.log('prompt is required');
-//     process.exit(2);
-// }
-
+import 'dotenv/config';
+import fs from 'node:fs/promises';
+import { readFileSync, writeFileSync } from 'node:fs';
 import OpenAI from "openai";
-// what's wrong with API keys
+
 const openai = new OpenAI({
-    apiKey: ''
+    apiKey: process.env.OPENAI_API_KEY
 });
 
-async function generateSnortRule() {
-    const completion = await openai.chat.completions.create({
-        model: "gpt-4o-mini",
-        messages: [
-            {
-                role: "system",
-                content: "You are a helpful assistant that generates Snort rules based on user input."
-            },
-            {
-                role: "user",
-                content: "Generate a Snort rule for detecting SQL injection attacks."
-            }
-        ]
-    })
-    console.log(completion.choices[0].message);
+let rules = [];
+const data = readFileSync("./snortrule.txt", 'utf8');
+
+console.log("File read successfully");
+rules = data.split('\n').filter(rule => rule.trim() !== '');
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
-generateSnortRule()
+
+async function processRules() {
+    for (let i = 0; i < Math.min(10, rules.length); i++) {
+        try {
+            const completion = await openai.chat.completions.create({
+                model: "ft:gpt-4o-mini-2024-07-18:personal::A4GokpKD",
+                messages: [
+                    {
+                        role: "user",
+                        content: rules[i]
+                    },
+                ]
+            });
+
+            console.log(`Processed rule ${i + 1}:`);
+            console.log(completion.choices[0].message.content);
+            writeFileSync("./processed_rules.txt", completion.choices[0].message.content + '\n', { flag: 'a' });
+
+            // Wait 1 second before the next API call
+            if (i < Math.min(9, rules.length - 1)) {  // Don't wait after the last call
+                console.log("Waiting for 1 second before next API call...");
+                await sleep(1000);
+            }
+        } catch (error) {
+            console.error(`Error processing rule ${i + 1}:`, error.message);
+        }
+    }
+}
+
+processRules().catch(console.error);
+
+// const completion = await openai.chat.completions.create({
+//     model: "ft:gpt-4o-mini-2024-07-18:personal::A4GokpKD",
+//     messages: [
+//         {
+//             role: "user",
+//             content: `Generate a Snort rule for detecting DDos. Don't hallucinate and no gibberish.`
+//         },
+//     ]
+// });
+
+// console.log(completion.choices[0].message.content);

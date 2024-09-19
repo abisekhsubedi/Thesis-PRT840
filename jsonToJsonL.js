@@ -72,7 +72,9 @@ const generateSnortRulePrompt = (entry) => {
 
 /**
  * Generates a Snort rule based on attack data.
- * TODO: Test and verify the generated Snort rule, Refactor it if needed.
+ * Context: this func will mimic the response of the actual snort rule generation, that will be 
+ * used to fine-tune the chatgpt model.
+ * TODO: Test and verify the generated Snort rule, Refactor it if needed. @shiraz
  */
     const generateSnortRuleResponse = (entry) => {
         const attackType = entry.attack;

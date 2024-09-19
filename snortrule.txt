@@ -1,0 +1,100 @@
+generate snort rule for detecting TCP traffic on port 80.
+generate snort rule for blocking all incoming ICMP echo requests.
+generate snort rule for alerting on outbound SSH traffic.
+generate snort rule for blocking access to a specific IP address.
+generate snort rule for detecting FTP login attempts.
+generate snort rule for detecting DNS queries to malicious domains.
+generate snort rule for detecting HTTP POST requests.
+generate snort rule for alerting on failed SSH login attempts.
+generate snort rule for detecting SQL injection attempts.
+generate snort rule for blocking BitTorrent traffic.
+generate snort rule for detecting SYN flood attacks.
+generate snort rule for monitoring DNS exfiltration.
+generate snort rule for detecting HTTP requests with suspicious user-agent strings.
+generate snort rule for alerting on access to a specific URL pattern.
+generate snort rule for blocking Telnet traffic.
+generate snort rule for detecting brute-force login attempts on FTP.
+generate snort rule for detecting outgoing traffic to a blacklisted IP.
+generate snort rule for detecting web-based malware delivery.
+generate snort rule for detecting DDoS attacks.
+generate snort rule for blocking traffic from a specific country.
+generate snort rule for alerting on HTTP traffic containing specific keywords.
+generate snort rule for detecting attempts to access unauthorized websites.
+generate snort rule for detecting SSL/TLS handshakes.
+generate snort rule for detecting ARP spoofing attempts.
+generate snort rule for detecting suspicious DNS tunneling activity.
+generate snort rule for detecting malicious PowerShell commands.
+generate snort rule for blocking traffic to specific geographic locations.
+generate snort rule for detecting suspicious URL redirections.
+generate snort rule for detecting port scanning activity.
+generate snort rule for detecting HTTP traffic with hidden parameters.
+generate snort rule for detecting suspicious SMB traffic.
+generate snort rule for detecting outgoing FTP data transfers.
+generate snort rule for detecting HTTP file uploads.
+generate snort rule for detecting brute-force RDP login attempts.
+generate snort rule for detecting malware beaconing behavior.
+generate snort rule for blocking outgoing email traffic.
+generate snort rule for detecting suspicious login attempts to web applications.
+generate snort rule for detecting network traffic from specific browser versions.
+generate snort rule for detecting excessive DNS queries from a host.
+generate snort rule for detecting HTTP requests with specific headers.
+generate snort rule for detecting malicious content in email attachments.
+generate snort rule for detecting attempts to exploit web server vulnerabilities.
+generate snort rule for detecting suspicious outbound HTTPS traffic.
+generate snort rule for blocking access to specific URLs.
+generate snort rule for detecting attempts to disable antivirus software.
+generate snort rule for detecting ransomware communication.
+generate snort rule for detecting SQL injection attacks in web traffic.
+generate snort rule for detecting unauthorized database access.
+generate snort rule for detecting buffer overflow attempts.
+generate snort rule for detecting suspicious email domain lookups.
+generate snort rule for detecting TCP port scans.
+generate snort rule for alerting on outgoing SMTP traffic.
+generate snort rule for blocking traffic from certain network segments.
+generate snort rule for detecting unauthorized file transfers over SMB.
+generate snort rule for detecting command-and-control communication.
+generate snort rule for detecting suspicious SSL certificates.
+generate snort rule for blocking traffic based on a specific MAC address.
+generate snort rule for detecting HTTP basic authentication attempts.
+generate snort rule for blocking all outbound traffic on port 21.
+generate snort rule for detecting DNS lookups for known phishing domains.
+generate snort rule for blocking outgoing VoIP traffic.
+generate snort rule for alerting on IPv6 traffic.
+generate snort rule for detecting DNS requests for suspicious TLDs.
+generate snort rule for detecting malicious browser extensions.
+generate snort rule for blocking traffic to specific subnets.
+generate snort rule for detecting HTTP responses with unusual status codes.
+generate snort rule for detecting suspicious traffic to cloud services.
+generate snort rule for detecting SSL decryption attempts.
+generate snort rule for detecting unauthorized API requests.
+generate snort rule for blocking access to specific DNS servers.
+generate snort rule for detecting malicious network scripts.
+generate snort rule for detecting unusual traffic volume on specific ports.
+generate snort rule for blocking non-standard HTTP methods.
+generate snort rule for detecting unauthorized SNMP traffic.
+generate snort rule for detecting suspicious HTTP redirects.
+generate snort rule for detecting attempts to tamper with log files.
+generate snort rule for detecting malicious IRC traffic.
+generate snort rule for detecting DNS amplification attacks.
+generate snort rule for detecting outgoing HTTP traffic to known C2 servers.
+generate snort rule for detecting suspicious SSH tunneling.
+generate snort rule for blocking access to TOR exit nodes.
+generate snort rule for detecting encrypted traffic over non-standard ports.
+generate snort rule for detecting brute-force attacks against databases.
+generate snort rule for blocking inbound UDP traffic on port 53.
+generate snort rule for detecting attempts to exploit Heartbleed vulnerability.
+generate snort rule for detecting outbound DNS exfiltration attempts.
+generate snort rule for detecting suspicious HTTP cookies.
+generate snort rule for detecting malicious email attachments over IMAP.
+generate snort rule for detecting outgoing traffic to TOR relays.
+generate snort rule for detecting SSL certificate mismatches.
+generate snort rule for blocking access to specific cloud storage services.
+generate snort rule for detecting DNS requests for dynamic DNS services.
+generate snort rule for detecting attempts to enumerate open ports.
+generate snort rule for detecting outgoing HTTP traffic with suspicious referrers.
+generate snort rule for blocking access to specific social media sites.
+generate snort rule for detecting unusual DNS query patterns.
+generate snort rule for detecting large data uploads over HTTP.
+generate snort rule for blocking access to malware distribution sites.
+generate snort rule for detecting suspicious IPv6 extension headers.
+generate snort rule for detecting traffic containing sensitive information like credit card numbers.
