@@ -1,0 +1,18 @@
+>>>>>>>>>>>>22/10/2024>>>>>>
+few shot
+{
+  prompt_tokens: 16213,
+  completion_tokens: 1168,
+  total_tokens: 17381,
+  prompt_tokens_details: { cached_tokens: 14720 },
+  completion_tokens_details: { reasoning_tokens: 0 }
+}
+ zero shot
+{
+  prompt_tokens: 1330,
+  completion_tokens: 1392,
+  total_tokens: 2722,
+  prompt_tokens_details: { cached_tokens: 1152 },
+  completion_tokens_details: { reasoning_tokens: 0 }
+}
+>>>>>>>end>>>>>>>>
